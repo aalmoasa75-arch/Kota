@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>خُطى | KHOTA — Pilot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D1B2A;--teal:#2CB1A1;--peach:#FFB199;--gold:#FFD166;--bg:#F7F3ED;--card:#fffdf9;--line:#e7e0d6;--muted:#687483;--ok:#20866f;--danger:#b93c3c;--shadow:0 12px 35px rgba(13,27,42,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:Cairo,Arial,sans-serif;background:var(--bg);color:var(--navy)}button,input,select,textarea{font:inherit}button{cursor:pointer}.hidden{display:none!important}
+a{text-decoration:none;color:inherit}.btn{border:0;border-radius:11px;padding:11px 17px;font-weight:800}.primary{background:var(--teal);color:#fff}.dark{background:var(--navy);color:#fff}.light{background:#fff;border:1px solid var(--line);color:var(--navy)}.gold{background:var(--gold);color:var(--navy)}
+.container{max-width:1180px;margin:auto;padding:0 22px}
+.brand{display:flex;align-items:center;gap:10px}.mark{width:43px;height:43px;position:relative}.mark i{position:absolute;width:12px;height:12px;border-radius:4px;transform:skewY(-28deg)}.mark i:nth-child(1){right:0;bottom:1px;background:var(--teal)}.mark i:nth-child(2){right:11px;bottom:14px;background:#4dc7b8}.mark i:nth-child(3){right:22px;bottom:27px;background:var(--peach)}.mark i:nth-child(4){right:33px;bottom:40px;background:var(--gold)}.ar{font-size:26px;font-weight:800;line-height:1}.en{font:600 11px Poppins;letter-spacing:4px;color:#6c7885}
+.public-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.public-nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.links{display:flex;gap:24px;font-size:13px;font-weight:700;color:#495563}.links a:hover{color:var(--teal)}.nav-actions{display:flex;gap:8px}
+.hero{padding:70px 0 50px;background:radial-gradient(circle at 15% 30%,rgba(44,177,161,.13),transparent 27%),linear-gradient(135deg,#fffdf9 45%,#f0faf8)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:45px;align-items:center}.eyebrow{color:var(--teal);font-weight:800;font-size:13px}.hero h1{font-size:48px;line-height:1.25;margin:12px 0 15px}.hero h1 span{color:var(--teal)}.hero p{font-size:18px;color:#5d6875;line-height:2;max-width:650px}.hero-actions{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}.hero-card{background:var(--navy);border-radius:28px;padding:30px;color:#fff;min-height:380px;position:relative;overflow:hidden}.hero-card:before{content:"";position:absolute;width:210px;height:210px;border:1px solid rgba(255,255,255,.13);border-radius:50%;left:-70px;top:-70px}.hero-card h3{font-size:25px;margin:15px 0}.steps-visual{margin-top:35px;display:flex;align-items:flex-end;gap:8px;height:115px}.steps-visual b{display:block;border-radius:8px 8px 3px 3px}.steps-visual b:nth-child(1){height:28px;width:48px;background:var(--teal)}.steps-visual b:nth-child(2){height:50px;width:48px;background:#4dc7b8}.steps-visual b:nth-child(3){height:73px;width:48px;background:var(--peach)}.steps-visual b:nth-child(4){height:98px;width:48px;background:var(--gold)}.star{font-size:25px;color:var(--gold);margin-right:5px}
+section{padding:65px 0}.section-title{text-align:center;max-width:700px;margin:0 auto 32px}.section-title h2{font-size:30px;margin:0 0 8px}.section-title p{color:var(--muted);margin:0;line-height:1.9}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}.icon{width:46px;height:46px;border-radius:13px;background:#e8f7f4;display:grid;place-items:center;font-size:21px;margin-bottom:15px}.card h3{margin:0 0 8px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.9}
+.how{background:#fff}.how-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.how .card{text-align:center;box-shadow:none}.number{font:700 25px Poppins;color:var(--teal)}
+.cta{background:var(--navy);color:#fff;text-align:center}.cta p{color:#c9d2d9}.footer{background:#091521;color:#c7d0d7;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center}.footer small{color:#8896a2}
+
+.portal{min-height:100vh}.portal-head{background:#fff;border-bottom:1px solid var(--line);padding:18px 0}.portal-head-inner{display:flex;justify-content:space-between;align-items:center}.user-pill{background:#f2f5f6;border-radius:30px;padding:8px 13px;font-size:12px}.portal-main{padding:28px 0}.welcome{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:18px}.welcome h1{margin:0;font-size:25px}.welcome p{margin:5px 0;color:var(--muted);font-size:13px}.portal-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}.metric{background:#fff;border:1px solid var(--line);border-radius:15px;padding:15px}.metric small{color:var(--muted)}.metric strong{display:block;font-size:24px;margin-top:4px}.progress{height:8px;background:#e9eeee;border-radius:99px;overflow:hidden}.progress span{height:100%;display:block;background:var(--teal)}.session{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:15px 0;border-bottom:1px solid var(--line)}.session:last-child{border:0}.session strong{display:block}.session small{color:var(--muted)}.badge{display:inline-flex;padding:4px 9px;border-radius:99px;font-size:10px;font-weight:800}.badge.ok{background:#e5f5f0;color:#19745f}.badge.wait{background:#fff5d8;color:#8a6900}.portal-tabs{display:flex;gap:8px;margin-bottom:16px;overflow:auto}.portal-tabs button{white-space:nowrap}.portal-view{display:none}.portal-view.active{display:block}
+
+.admin{display:flex;min-height:100vh}.side{width:245px;background:var(--navy);color:#fff;position:fixed;right:0;top:0;bottom:0;padding:20px 14px;z-index:30}.side .brand{padding:7px 9px 25px}.side .en{color:#a9b6c0}.admin-nav{display:grid;gap:5px}.admin-nav button{background:transparent;color:#d5e0e6;border:0;border-radius:11px;padding:11px 12px;text-align:right;display:flex;gap:10px;align-items:center}.admin-nav button.active,.admin-nav button:hover{background:rgba(255,255,255,.1);color:#fff}.admin-main{margin-right:245px;width:calc(100% - 245px);padding:24px;max-width:1500px}.admin-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.admin-top h1{margin:0;font-size:25px}.admin-top p{margin:4px 0;color:var(--muted);font-size:12px}.admin-actions{display:flex;gap:8px}.admin-view{display:none}.admin-view.active{display:block}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;display:flex;justify-content:space-between}.stat small{color:var(--muted)}.stat strong{display:block;font-size:27px;margin-top:3px}.stat-icon{width:40px;height:40px;border-radius:11px;background:#e9f7f4;display:grid;place-items:center}.admin-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;margin-top:14px}.admin-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px}.admin-card h2{font-size:16px;margin:0}.admin-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse}th,td{padding:10px 8px;border-bottom:1px solid var(--line);font-size:12px;text-align:right;white-space:nowrap}th{color:var(--muted);font-weight:700}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.field{display:grid;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:800}.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:9px;background:#fff;padding:9px;outline:0}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--teal)}textarea{min-height:80px;resize:vertical}.search{width:100%;max-width:350px}.search input{width:100%;border:1px solid var(--line);border-radius:9px;padding:9px}.toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:13px}.notice{background:#fff7df;border:1px solid #f0dfae;border-radius:11px;padding:11px;color:#725d1d;font-size:11px;line-height:1.8}.status{display:inline-flex;padding:4px 8px;border-radius:99px;font-size:10px;font-weight:800}.active{background:#e7f6f1;color:#19735f}.pending{background:#fff5d8;color:#8b6b00}.paused{background:#eef0f3;color:#59636f}.danger{background:#ffe8e8;color:#a12f2f}.empty{text-align:center;color:var(--muted);padding:30px}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.day{background:#fff;border:1px solid var(--line);border-radius:9px;min-height:80px;padding:7px}.day.today{border:2px solid var(--teal)}.day small{font-weight:800}.event{display:block;background:#e8f7f4;color:#176c60;border-radius:5px;padding:4px;margin-top:5px;font-size:9px;white-space:nowrap;overflow:hidden}.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:6px}.week div{text-align:center;color:var(--muted);font-size:10px}.modal{position:fixed;inset:0;background:rgba(13,27,42,.5);z-index:80;display:none;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal-box{background:var(--card);border-radius:18px;width:100%;max-width:760px;max-height:90vh;overflow:auto;padding:22px}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.close{border:0;background:#eef1f3;border-radius:8px;width:34px;height:34px}.toast{position:fixed;left:20px;bottom:20px;background:var(--navy);color:#fff;padding:11px 15px;border-radius:10px;z-index:100;display:none}.toast.show{display:block}
+@media(max-width:950px){.hero-grid,.portal-grid,.admin-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:repeat(3,1fr)}.stats,.metric-grid{grid-template-columns:repeat(2,1fr)}.side{width:72px}.side .brand-text,.side .admin-nav span:not(.ico){display:none}.side .brand{justify-content:center}.admin-main{margin-right:72px;width:calc(100% - 72px)}}@media(max-width:650px){.links{display:none}.hero{padding:45px 0}.hero h1{font-size:35px}.cards,.how-grid,.stats,.metric-grid,.form-grid{grid-template-columns:1fr}.container{padding:0 15px}.footer-inner,.welcome,.portal-head-inner,.admin-top,.toolbar{flex-direction:column;align-items:stretch}.admin-main{padding:14px}.hero-card{min-height:300px}}
+</style>
+</head>
+<body>
+
+<!-- PUBLIC WEBSITE -->
+<div id="publicApp">
+<header class="public-header">
+  <div class="container public-nav">
+    <a class="brand" href="#" onclick="scrollTopPage()">
+      <div class="mark"><i></i><i></i><i></i><i></i></div>
+      <div><div class="ar">خُطى</div><div class="en">KHOTA</div></div>
+    </a>
+    <nav class="links">
+      <a href="#services">الخدمات</a><a href="#how">كيف تعمل خُطى؟</a><a href="#why">لماذا خُطى؟</a><a href="#faq">الأسئلة</a>
+    </nav>
+    <div class="nav-actions"><button class="btn light" onclick="showPortal()">ولي الأمر</button><button class="btn primary" onclick="openRegistration()">ابدأ رحلة طفلك</button></div>
+  </div>
+</header>
+
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">منصة تعليمية فردية • KHOTA</div>
+   <h1>خطوة صغيرة اليوم،<br><span>تصنع فرقاً كبيراً غداً.</span></h1>
+   <p>حصص دعم وتعليم فردية في اللغة الإنجليزية للمرحلة الابتدائية العليا، مع متابعة واضحة لتقدم الطالب وبمواعيد تناسب الأسرة.</p>
+   <div class="hero-actions"><button class="btn primary" onclick="openRegistration()">ابدأ رحلة طفلك</button><button class="btn light" onclick="openBooking()">احجز حصة</button></div>
+  </div>
+  <div class="hero-card">
+   <div class="brand"><div class="mark"><i></i><i></i><i></i><i></i></div><div><div class="ar" style="color:#fff">خُطى</div><div class="en" style="color:#aebbc5">KHOTA</div></div></div>
+   <h3>نتقدم مع الطالب<br>خطوة بخطوة <span class="star">★</span></h3>
+   <p style="color:#c8d2d9;line-height:1.9">تقييم، خطة، حصة فردية، متابعة، وقياس للتقدم.</p>
+   <div class="steps-visual"><b></b><b></b><b></b><b></b><span class="star">★</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="container">
+  <div class="section-title"><h2>ماذا تقدم خُطى؟</h2><p>نركز على احتياج الطالب الفعلي، وليس على عدد الساعات فقط.</p></div>
+  <div class="cards">
+   <div class="card"><div class="icon">👤</div><h3>حصص فردية 1-on-1</h3><p>وقت تعليمي مخصص للطالب مع معلم مناسب لمستواه وهدفه.</p></div>
+   <div class="card"><div class="icon">📈</div><h3>متابعة التقدم</h3><p>ملاحظات بعد الحصص ومؤشرات تساعد الأسرة على معرفة التطور.</p></div>
+   <div class="card"><div class="icon">🕐</div><h3>مواعيد مرنة</h3><p>تعلم خارج وقت الدوام الرسمي وبمواعيد تناسب جدول الأسرة.</p></div>
+   <div class="card"><div class="icon">🎯</div><h3>خطة حسب الاحتياج</h3><p>دعم دراسي، قواعد، قراءة، كتابة، محادثة أو رفع مستوى عام.</p></div>
+   <div class="card"><div class="icon">💻</div><h3>تعلم عن بُعد</h3><p>الحصص عبر Microsoft Teams مع روابط ومواعيد منظمة.</p></div>
+   <div class="card"><div class="icon">🤝</div><h3>شراكة مع الأسرة</h3><p>ولي الأمر جزء من رحلة الطالب ويستطيع متابعة الحضور والتقدم.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="how" class="how">
+ <div class="container">
+  <div class="section-title"><h2>كيف تعمل خُطى؟</h2><p>رحلة بسيطة من التسجيل إلى متابعة التقدم.</p></div>
+  <div class="how-grid">
+   <div class="card"><div class="number">01</div><h3>التسجيل</h3><p>بيانات الطالب وولي الأمر.</p></div>
+   <div class="card"><div class="number">02</div><h3>التقييم</h3><p>تحديد المستوى والاحتياج.</p></div>
+   <div class="card"><div class="number">03</div><h3>الحجز</h3><p>اختيار الموعد المناسب.</p></div>
+   <div class="card"><div class="number">04</div><h3>الحصة</h3><p>جلسة فردية عبر Teams.</p></div>
+   <div class="card"><div class="number">05</div><h3>المتابعة</h3><p>تقييم وتقدم وخطوة تالية.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="why">
+ <div class="container">
+  <div class="section-title"><h2>لماذا خُطى؟</h2><p>لأن الهدف ليس أن يأخذ الطالب حصة أخرى؛ الهدف أن يعرف ما الذي سيتحسن بعد كل حصة.</p></div>
+  <div class="cards">
+   <div class="card"><h3>وضوح للأسرة</h3><p>تعرف الأسرة أين بدأ الطالب، ماذا يتعلم، وما الخطوة القادمة.</p></div>
+   <div class="card"><h3>تعليم مخصص</h3><p>الحصة تبنى على مستوى الطالب واحتياجه بدلاً من محتوى واحد للجميع.</p></div>
+   <div class="card"><h3>قياس مستمر</h3><p>الحضور والملاحظات ومؤشرات التقدم تتحول إلى سجل تعليمي قابل للمتابعة.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="faq" style="background:#fff">
+ <div class="container">
+  <div class="section-title"><h2>أسئلة شائعة</h2></div>
+  <div class="cards">
+   <div class="card"><h3>لمن تناسب خُطى؟</h3><p>للطلاب في المرحلة الابتدائية العليا الذين يحتاجون دعماً أو تقوية في الإنجليزية خارج وقت الدوام.</p></div>
+   <div class="card"><h3>كم مدة الحصة؟</h3><p>النسخة التجريبية تعتمد 45 دقيقة للحصة، ويمكن تعديلها في إعدادات الأكاديمية.</p></div>
+   <div class="card"><h3>كيف يتم الحجز؟</h3><p>يتم الحجز عبر Microsoft Bookings، ثم يصل الطالب إلى الحصة عبر Microsoft Teams.</p></div>
+ </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container"><h2>جاهزون للخطوة الأولى؟</h2><p>ابدأ ببيانات الطالب، وسنكمل معك بقية الرحلة.</p><button class="btn primary" onclick="openRegistration()">ابدأ رحلة طفلك</button></div>
+</section>
+<footer class="footer"><div class="container footer-inner"><div class="brand"><div class="mark"><i></i><i></i><i></i><i></i></div><div><div class="ar" style="color:#fff">خُطى</div><div class="en">KHOTA</div></div></div><small>خطوة. بثقة. نحو التميز.</small><button class="btn light" onclick="showAdmin()">دخول الإدارة</button></div></footer>
+</div>
+
+<!-- PARENT PORTAL -->
+<div id="portalApp" class="portal hidden">
+<header class="portal-head"><div class="container portal-head-inner"><div class="brand"><div class="mark"><i></i><i></i><i></i><i></i></div><div><div class="ar">خُطى</div><div class="en">KHOTA</div></div></div><div style="display:flex;gap:8px;align-items:center"><span class="user-pill">ولي الأمر: عبدالله</span><button class="btn light" onclick="showPublic()">الموقع</button></div></div></header>
+<main class="portal-main"><div class="container">
+ <div class="welcome"><div><h1>أهلاً بك في رحلة خُطى 👋</h1><p>تابع تقدم الطالب والحصص القادمة من مكان واحد.</p></div><button class="btn primary" onclick="openBooking()">+ حجز حصة</button></div>
+ <div class="metric-grid">
+  <div class="metric"><small>المستوى الحالي</small><strong>متوسط</strong></div><div class="metric"><small>الحصص المتبقية</small><strong>6</strong></div><div class="metric"><small>الحضور</small><strong>94%</strong></div><div class="metric"><small>آخر تقييم</small><strong>جيد جداً</strong></div>
+ </div>
+ <div class="portal-tabs"><button class="btn primary" onclick="portalTab('overview',this)">الرئيسية</button><button class="btn light" onclick="portalTab('progress',this)">التقدم</button><button class="btn light" onclick="portalTab('schedule',this)">الجدول</button><button class="btn light" onclick="portalTab('payments',this)">المدفوعات</button></div>
+ <div id="portal-overview" class="portal-view active">
+  <div class="portal-grid">
+   <div class="card"><div class="section-title" style="text-align:right;margin:0 0 10px"><h2 style="font-size:20px">الحصة القادمة</h2></div>
+    <div class="session"><div><strong>English — Grammar & Speaking</strong><small>الثلاثاء 8:00 مساءً • 45 دقيقة</small><small style="display:block">معلمة: Sarah</small></div><button class="btn primary" onclick="alert('سيتم فتح رابط Microsoft Teams عند ربط الحساب الفعلي.')">دخول Teams</button></div>
+    <div class="session"><div><strong>English — Reading</strong><small>الخميس 7:00 مساءً • 45 دقيقة</small></div><span class="badge wait">مجدولة</span></div>
+   </div>
+   <div class="card"><h2 style="font-size:18px">آخر ملاحظة من المعلمة</h2><p style="color:var(--muted);line-height:2">أحمد أظهر تحسناً واضحاً في استخدام المفردات. نوصي بالتركيز على المحادثة خلال الحصص القادمة.</p><span class="badge ok">متابعة جيدة</span></div>
+  </div>
+ </div>
+ <div id="portal-progress" class="portal-view">
+  <div class="cards"><div class="card"><h3>Reading</h3><div class="progress"><span style="width:80%"></span></div><p style="margin-top:8px">80%</p></div><div class="card"><h3>Grammar</h3><div class="progress"><span style="width:70%"></span></div><p style="margin-top:8px">70%</p></div><div class="card"><h3>Vocabulary</h3><div class="progress"><span style="width:82%"></span></div><p style="margin-top:8px">82%</p></div><div class="card"><h3>Speaking</h3><div class="progress"><span style="width:60%"></span></div><p style="margin-top:8px">60%</p></div></div>
+ </div>
+ <div id="portal-schedule" class="portal-view"><div class="card"><h2>الجدول</h2><div class="session"><div><strong>الثلاثاء</strong><small>8:00 مساءً — Grammar & Speaking</small></div><span class="badge ok">مؤكد</span></div><div class="session"><div><strong>الخميس</strong><small>7:00 مساءً — Reading</small></div><span class="badge wait">مجدولة</span></div><button class="btn primary" onclick="openBooking()">حجز موعد جديد</button></div></div>
+ <div id="portal-payments" class="portal-view"><div class="card"><h2>المدفوعات</h2><div class="session"><div><strong>باقة 8 حصص</strong><small>آخر دفعة: 1,200 ر.س</small></div><span class="badge ok">مدفوع</span></div><div class="session"><div><strong>الرصيد المتبقي</strong><small>6 حصص</small></div><strong>6 / 8</strong></div></div></div>
+ </div>
+</main></div>
+
+<!-- ADMIN -->
+<div id="adminApp" class="admin hidden">
+<aside class="side"><div class="brand"><div class="mark"><i></i><i></i><i></i><i></i></div><div class="brand-text"><div class="ar" style="color:#fff">خُطى</div><div class="en">KHOTA</div></div></div>
+<nav class="admin-nav">
+<button class="active" data-admin="dash"><span class="ico">⌂</span><span>الرئيسية</span></button>
+<button data-admin="students"><span class="ico">👥</span><span>الطلاب</span></button>
+<button data-admin="bookings"><span class="ico">▣</span><span>الحجز والتقويم</span></button>
+<button data-admin="sessions"><span class="ico">✓</span><span>الحصص</span></button>
+<button data-admin="teachers"><span class="ico">◉</span><span>المعلمون</span></button>
+<button data-admin="payments"><span class="ico">﷼</span><span>المدفوعات</span></button>
+<button data-admin="reports"><span class="ico">▤</span><span>التقارير</span></button>
+<button data-admin="settings"><span class="ico">⚙</span><span>الإعدادات</span></button>
+</nav></aside>
+<main class="admin-main">
+<div class="admin-top"><div><h1 id="adminTitle">لوحة التحكم</h1><p id="adminSub">تشغيل أكاديمية خُطى</p></div><div class="admin-actions"><button class="btn light" onclick="showPublic()">الموقع</button><button class="btn primary" onclick="openStudentModal()">+ تسجيل طالب</button></div></div>
+
+<section id="admin-dash" class="admin-view active">
+<div class="stats"><div class="stat"><div><small>الطلاب النشطون</small><strong id="aStudents">0</strong></div><div class="stat-icon">👥</div></div><div class="stat"><div><small>حصص الأسبوع</small><strong id="aSessions">0</strong></div><div class="stat-icon">📚</div></div><div class="stat"><div><small>ساعات تعليمية</small><strong id="aHours">0</strong></div><div class="stat-icon">⏱</div></div><div class="stat"><div><small>مبالغ مستحقة</small><strong id="aDue">0</strong></div><div class="stat-icon">﷼</div></div></div>
+<div class="admin-grid"><div class="admin-card"><div class="admin-head"><h2>آخر الطلاب</h2><button class="btn light" onclick="adminView('students')">كل الطلاب</button></div><div id="recentAdmin"></div></div><div class="admin-card"><div class="admin-head"><h2>تنبيهات</h2></div><div class="session"><span>بانتظار تحديد المستوى</span><b id="aPending">0</b></div><div class="session"><span>قيد المتابعة</span><b id="aFollow">0</b></div><div class="notice" style="margin-top:12px">هذه نسخة Pilot. البيانات محفوظة محلياً في المتصفح لأغراض الاختبار فقط.</div></div></div>
+</section>
+
+<section id="admin-students" class="admin-view"><div class="admin-card"><div class="toolbar"><div class="search"><input id="aSearch" placeholder="بحث بالطالب أو ولي الأمر أو الجوال" oninput="renderAdminStudents()"></div><button class="btn primary" onclick="openStudentModal()">+ تسجيل طالب جديد</button></div><div id="adminStudentsTable"></div></div></section>
+
+<section id="admin-bookings" class="admin-view"><div class="admin-grid"><div class="admin-card"><div class="admin-head"><h2>Microsoft Bookings</h2><span class="status active">تكامل جاهز للإعداد</span></div><div id="bookingBox" class="empty">ضع رابط Microsoft Bookings في الإعدادات.</div></div><div class="admin-card"><h2>إعداد الربط</h2><div class="field" style="margin-top:12px"><label>رابط Bookings</label><input id="bookingUrl"></div><div class="field" style="margin-top:10px"><label>رابط Embed / iframe</label><input id="bookingEmbed"></div><button class="btn primary" style="margin-top:12px" onclick="saveBooking()">حفظ</button></div></div><div class="admin-card" style="margin-top:14px"><div class="admin-head"><h2>التقويم التشغيلي</h2><div><button class="btn light" onclick="moveMonth(-1)">‹</button> <button class="btn light" onclick="moveMonth(1)">›</button></div></div><h3 id="monthTitle"></h3><div class="week"><div>الأحد</div><div>الاثنين</div><div>الثلاثاء</div><div>الأربعاء</div><div>الخميس</div><div>الجمعة</div><div>السبت</div></div><div id="adminCalendar" class="calendar"></div></div></section>
+
+<section id="admin-sessions" class="admin-view"><div class="admin-card"><div class="admin-head"><h2>الحصص والمتابعة</h2><button class="btn primary" onclick="openSessionModal()">+ إضافة حصة</button></div><div id="adminSessionsTable"></div></div></section>
+
+<section id="admin-teachers" class="admin-view"><div class="admin-grid"><div class="admin-card"><h2>المعلمون</h2><div id="teacherList"></div></div><div class="admin-card"><h2>إضافة معلم</h2><div class="field" style="margin-top:12px"><label>الاسم</label><input id="teacherName"></div><div class="field" style="margin-top:10px"><label>التخصص</label><input id="teacherSpec" placeholder="English / Grammar / Conversation"></div><button class="btn primary" style="margin-top:12px" onclick="addTeacher()">حفظ</button></div></div></section>
+
+<section id="admin-payments" class="admin-view"><div class="admin-card"><div class="admin-head"><h2>المدفوعات والاشتراكات</h2><button class="btn primary" onclick="openPaymentModal()">+ تسجيل دفعة</button></div><div id="adminPaymentsTable"></div></div></section>
+
+<section id="admin-reports" class="admin-view"><div class="stats"><div class="stat"><div><small>طلاب لديهم خطة</small><strong id="rPlans">0</strong></div></div><div class="stat"><div><small>حضر</small><strong id="rAttend">0</strong></div></div><div class="stat"><div><small>غاب</small><strong id="rAbsent">0</strong></div></div><div class="stat"><div><small>متوسط الحصة</small><strong>45 د</strong></div></div></div><div class="admin-card" style="margin-top:14px"><h2>تصدير بيانات الـPilot</h2><p style="color:var(--muted);font-size:12px">يمكن تصدير البيانات لاستخدامها في تحليل تجربة الـ20 شخصاً.</p><button class="btn light" onclick="exportCSV('students')">طلاب CSV</button> <button class="btn light" onclick="exportCSV('sessions')">حصص CSV</button> <button class="btn dark" onclick="backup()">نسخة JSON</button></div></section>
+
+<section id="admin-settings" class="admin-view"><div class="admin-grid"><div class="admin-card"><h2>إعدادات الأكاديمية</h2><div class="form-grid" style="margin-top:14px"><div class="field"><label>اسم الأكاديمية</label><input id="academyName" value="خُطى | KHOTA"></div><div class="field"><label>مدة الحصة</label><select id="duration"><option>45 دقيقة</option><option>60 دقيقة</option><option>30 دقيقة</option></select></div><div class="field"><label>منصة الحصة</label><select id="channel"><option>Microsoft Teams</option><option>Zoom</option></option><option>حضوري</option></select></div></div><button class="btn primary" style="margin-top:14px" onclick="saveSettings()">حفظ</button></div><div class="admin-card"><h2>ملاحظة مهمة</h2><div class="notice">لا تستخدم GitHub Pages كقاعدة بيانات. عند الإطلاق الحقيقي نحتاج Backend وقاعدة بيانات آمنة، حسابات وصلاحيات، نسخ احتياطي، وتكامل Microsoft Graph للحجوزات والحصص.</div><button class="btn" style="margin-top:12px;background:#fff0f0;color:var(--danger)" onclick="resetData()">مسح بيانات الـPilot</button></div></div></section>
+</main></div>
+
+<!-- MODALS -->
+<div class="modal" id="studentModal"><div class="modal-box"><div class="modal-head"><h2>تسجيل طالب جديد</h2><button class="close" onclick="closeModal('studentModal')">×</button></div><form id="studentForm"><input type="hidden" id="sid"><div class="form-grid">
+<div class="field"><label>اسم الطالب *</label><input id="sname" required></div><div class="field"><label>ولي الأمر *</label><input id="parent" required></div>
+<div class="field"><label>جوال ولي الأمر *</label><input id="phone" required></div><div class="field"><label>البريد</label><input id="email" type="email"></div>
+<div class="field"><label>الصف</label><select id="grade"><option>رابع ابتدائي</option><option>خامس ابتدائي</option><option>سادس ابتدائي</option><option>أول متوسط</option><option>أخرى</option></select></div>
+<div class="field"><label>مستوى الإنجليزية</label><select id="level"><option>لم يحدد بعد</option><option>مبتدئ</option><option>أساسي</option><option>متوسط</option><option>متقدم</option></select></div>
+<div class="field"><label>الهدف</label><select id="goal"><option>دعم دراسي</option><option>تحسين الدرجات</option><option>القواعد</option><option>المحادثة</option><option>القراءة والكتابة</option><option>اختبار</option></select></div>
+<div class="field"><label>الحالة</label><select id="status"><option>نشط</option><option>قيد التقييم</option><option>متوقف</option></select></div>
+<div class="field full"><label>الأوقات المناسبة</label><input id="times" placeholder="الأحد والثلاثاء 6–8 مساءً"></div>
+<div class="field full"><label>ملاحظات</label><textarea id="notes"></textarea></div></div><div style="margin-top:15px"><button class="btn light" type="button" onclick="closeModal('studentModal')">إلغاء</button> <button class="btn primary">حفظ</button></div></form></div></div>
+
+<div class="modal" id="sessionModal"><div class="modal-box"><div class="modal-head"><h2>إضافة حصة</h2><button class="close" onclick="closeModal('sessionModal')">×</button></div><form id="sessionForm"><div class="form-grid">
+<div class="field"><label>الطالب</label><select id="sessionStudent"></select></div><div class="field"><label>المعلم</label><select id="sessionTeacher"></select></div>
+<div class="field"><label>التاريخ</label><input id="sessionDate" type="date"></div><div class="field"><label>الوقت</label><input id="sessionTime" type="time"></div>
+<div class="field"><label>الحالة</label><select id="sessionStatus"><option>مجدولة</option><option>حضر</option><option>غاب</option><option>ألغيت</option></select></div><div class="field"><label>رابط Teams</label><input id="teams"></div>
+<div class="field full"><label>ملاحظات المعلم</label><textarea id="sessionNotes"></textarea></div></div><div style="margin-top:15px"><button class="btn light" type="button" onclick="closeModal('sessionModal')">إلغاء</button> <button class="btn primary">حفظ</button></div></form></div></div>
+
+<div class="modal" id="paymentModal"><div class="modal-box"><div class="modal-head"><h2>تسجيل دفعة</h2><button class="close" onclick="closeModal('paymentModal')">×</button></div><form id="paymentForm"><div class="form-grid">
+<div class="field"><label>الطالب</label><select id="payStudent"></select></div><div class="field"><label>المبلغ ريال</label><input id="amount" type="number" min="0"></div>
+<div class="field"><label>الباقة</label><select id="plan"><option>4 حصص</option><option>8 حصص</option><option>12 حصة</option><option>حصة مفردة</option></select></div><div class="field"><label>الحالة</label><select id="payStatus"><option>مدفوع</option><option>مستحق</option><option>جزئي</option></select></div>
+</div><div style="margin-top:15px"><button class="btn light" type="button" onclick="closeModal('paymentModal')">إلغاء</button> <button class="btn primary">حفظ</button></div></form></div></div>
+
+<div class="modal" id="registerModal"><div class="modal-box"><div class="modal-head"><h2>ابدأ رحلة طفلك</h2><button class="close" onclick="closeModal('registerModal')">×</button></div><p style="color:var(--muted);font-size:12px">هذه نسخة تجريبية. البيانات تدخل مباشرة إلى لوحة الإدارة في هذا المتصفح.</p><form id="registerForm"><div class="form-grid">
+<div class="field"><label>اسم ولي الأمر *</label><input id="rparent" required></div><div class="field"><label>جوال ولي الأمر *</label><input id="rphone" required></div>
+<div class="field"><label>اسم الطالب *</label><input id="rstudent" required></div><div class="field"><label>الصف</label><select id="rgrade"><option>رابع ابتدائي</option><option>خامس ابتدائي</option><option>سادس ابتدائي</option><option>أول متوسط</option></select></div>
+<div class="field"><label>هدف الطالب</label><select id="rgoal"><option>دعم دراسي</option><option>تحسين الدرجات</option><option>القواعد</option><option>المحادثة</option><option>القراءة والكتابة</option></select></div>
+<div class="field"><label>المستوى المتوقع</label><select id="rlevel"><option>لم يحدد بعد</option><option>مبتدئ</option><option>أساسي</option><option>متوسط</option><option>متقدم</option></select></div>
+<div class="field full"><label>الأوقات المناسبة</label><input id="rtimes"></div>
+<div class="field full"><label>ملاحظات</label><textarea id="rnotes"></textarea></div>
+</div><div style="margin-top:15px"><button class="btn light" type="button" onclick="closeModal('registerModal')">إلغاء</button> <button class="btn primary">إرسال التسجيل</button></div></form></div></div>
+
+<div class="modal" id="bookingModal"><div class="modal-box"><div class="modal-head"><h2>حجز حصة</h2><button class="close" onclick="closeModal('bookingModal')">×</button></div><div id="bookingContent" class="empty"></div></div></div>
+<div id="toast" class="toast"></div>
+
+<script>
+const KEY='khota_complete_pilot_v2';
+let db=JSON.parse(localStorage.getItem(KEY)||'null')||{students:[],sessions:[],teachers:[{id:'t1',name:'معلم تجريبي',spec:'English'}],payments:[],settings:{bookingUrl:'',bookingEmbed:'',duration:'45 دقيقة',channel:'Microsoft Teams'}};
+let month=new Date();month.setDate(1);
+
+const $=id=>document.getElementById(id);
+function save(){localStorage.setItem(KEY,JSON.stringify(db));renderAll()}
+function uid(p){return p+'_'+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function toast(x){$('toast').textContent=x;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),2200)}
+function hideAll(){$('publicApp').classList.add('hidden');$('portalApp').classList.add('hidden');$('adminApp').classList.add('hidden')}
+function showPublic(){hideAll();$('publicApp').classList.remove('hidden');scrollTopPage()}
+function showPortal(){hideAll();$('portalApp').classList.remove('hidden')}
+function showAdmin(){hideAll();$('adminApp').classList.remove('hidden');renderAll()}
+function scrollTopPage(){window.scrollTo({top:0,behavior:'smooth'})}
+function openRegistration(){$('registerModal').classList.add('show')}
+function openBooking(){
+ $('bookingContent').innerHTML=db.settings.bookingEmbed?`<iframe style="width:100%;height:600px;border:0;border-radius:12px" src="${esc(db.settings.bookingEmbed)}"></iframe>`:
+ db.settings.bookingUrl?`<div><p>صفحة الحجز مرتبطة بـ Microsoft Bookings.</p><a class="btn primary" href="${esc(db.settings.bookingUrl)}" target="_blank" rel="noopener">فتح صفحة الحجز</a></div>`:
+ `<div><h3>الحجز التجريبي</h3><p>لم يتم إدخال رابط Microsoft Bookings بعد. يمكن للإدارة وضع الرابط من قسم الإعدادات.</p></div>`;
+ $('bookingModal').classList.add('show')
+}
+function closeModal(id){$(id).classList.remove('show')}
+function portalTab(name,btn){document.querySelectorAll('.portal-view').forEach(x=>x.classList.remove('active'));$('portal-'+name).classList.add('active');document.querySelectorAll('.portal-tabs button').forEach(x=>{x.classList.remove('primary');x.classList.add('light')});btn.classList.remove('light');btn.classList.add('primary')}
+
+$('registerForm').onsubmit=e=>{e.preventDefault();db.students.unshift({id:uid('s'),name:$('rstudent').value,parent:$('rparent').value,phone:$('rphone').value,email:'',grade:$('rgrade').value,level:$('rlevel').value,goal:$('rgoal').value,status:'قيد التقييم',times:$('rtimes').value,notes:$('rnotes').value,created:new Date().toISOString()});save();closeModal('registerModal');toast('تم استلام التسجيل — ستتم مراجعة بيانات الطالب');setTimeout(showPortal,500)}
+function openStudentModal(s=null){$('studentForm').reset();$('sid').value=s?.id||'';if(s){$('sname').value=s.name;$('parent').value=s.parent;$('phone').value=s.phone;$('email').value=s.email||'';$('grade').value=s.grade;$('level').value=s.level;$('goal').value=s.goal;$('status').value=s.status;$('times').value=s.times||'';$('notes').value=s.notes||''}$('studentModal').classList.add('show')}
+$('studentForm').onsubmit=e=>{e.preventDefault();let sid=$('sid').value;let d={id:sid||uid('s'),name:$('sname').value,parent:$('parent').value,phone:$('phone').value,email:$('email').value,grade:$('grade').value,level:$('level').value,goal:$('goal').value,status:$('status').value,times:$('times').value,notes:$('notes').value,created:new Date().toISOString()};let i=db.students.findIndex(s=>s.id===d.id);if(i>=0)db.students[i]={...db.students[i],...d};else db.students.unshift(d);save();closeModal('studentModal');toast(i>=0?'تم تحديث الطالب':'تم تسجيل الطالب')}
+function openSessionModal(){if(!db.students.length){toast('أضف طالباً أولاً');return}fillSelects();$('sessionForm').reset();$('sessionDate').value=new Date().toISOString().slice(0,10);$('sessionModal').classList.add('show')}
+$('sessionForm').onsubmit=e=>{e.preventDefault();db.sessions.push({id:uid('ss'),student:$('sessionStudent').value,teacher:$('sessionTeacher').value,date:$('sessionDate').value,time:$('sessionTime').value,status:$('sessionStatus').value,teams:$('teams').value,notes:$('sessionNotes').value});save();closeModal('sessionModal');toast('تمت إضافة الحصة')}
+function openPaymentModal(){if(!db.students.length){toast('أضف طالباً أولاً');return}fillSelects();$('paymentForm').reset();$('paymentModal').classList.add('show')}
+$('paymentForm').onsubmit=e=>{e.preventDefault();db.payments.unshift({id:uid('p'),student:$('payStudent').value,amount:+$('amount').value||0,plan:$('plan').value,status:$('payStatus').value,date:new Date().toISOString().slice(0,10)});save();closeModal('paymentModal');toast('تم تسجيل الدفعة')}
+function fillSelects(){$('sessionStudent').innerHTML=db.students.map(s=>`<option value="${s.id}">${esc(s.name)}</option>`).join('');$('payStudent').innerHTML=$('sessionStudent').innerHTML;$('sessionTeacher').innerHTML=db.teachers.map(t=>`<option value="${t.id}">${esc(t.name)}</option>`).join('')}
+
+document.querySelectorAll('.admin-nav button').forEach(b=>b.onclick=()=>adminView(b.dataset.admin));
+function adminView(n){document.querySelectorAll('.admin-view').forEach(v=>v.classList.remove('active'));$('admin-'+n).classList.add('active');document.querySelectorAll('.admin-nav button').forEach(b=>b.classList.toggle('active',b.dataset.admin===n));let map={dash:['لوحة التحكم','تشغيل أكاديمية خُطى'],students:['الطلاب','ملفات التسجيل والمتابعة'],bookings:['الحجز والتقويم','Microsoft Bookings والتقويم التشغيلي'],sessions:['الحصص','الحضور وملاحظات المعلمين'],teachers:['المعلمون','إدارة فريق التعليم'],payments:['المدفوعات','الباقات والمبالغ'],reports:['التقارير','مؤشرات التشغيل والتعليم'],settings:['الإعدادات','التكاملات وإعدادات الأكاديمية']};$('adminTitle').textContent=map[n][0];$('adminSub').textContent=map[n][1];if(n==='bookings')renderCalendar()}
+
+function renderAdminStudents(){let q=($('aSearch')?.value||'').toLowerCase();let a=db.students.filter(s=>(s.name+' '+s.parent+' '+s.phone).toLowerCase().includes(q));$('adminStudentsTable').innerHTML=a.length?`<div class="table-wrap"><table><thead><tr><th>الطالب</th><th>ولي الأمر</th><th>الصف</th><th>المستوى</th><th>الهدف</th><th>الحالة</th><th></th></tr></thead><tbody>${a.map(s=>`<tr><td><b>${esc(s.name)}</b><small style="display:block;color:#687483">${esc(s.phone)}</small></td><td>${esc(s.parent)}</td><td>${esc(s.grade)}</td><td>${esc(s.level)}</td><td>${esc(s.goal)}</td><td><span class="status ${s.status==='نشط'?'active':s.status==='قيد التقييم'?'pending':'paused'}">${esc(s.status)}</span></td><td><button class="btn light" onclick="openStudentModal(db.students.find(x=>x.id==='${s.id}'))">تعديل</button> <button class="btn" style="background:#fff0f0;color:#b93c3c" onclick="deleteStudent('${s.id}')">حذف</button></td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">لا توجد نتائج.</div>'}
+function deleteStudent(id){if(!confirm('حذف ملف الطالب؟'))return;db.students=db.students.filter(s=>s.id!==id);db.sessions=db.sessions.filter(s=>s.student!==id);db.payments=db.payments.filter(p=>p.student!==id);save();toast('تم حذف الطالب')}
+function renderAdminSessions(){$('adminSessionsTable').innerHTML=db.sessions.length?`<div class="table-wrap"><table><thead><tr><th>التاريخ</th><th>الطالب</th><th>المعلم</th><th>الوقت</th><th>الحالة</th><th>Teams</th></tr></thead><tbody>${db.sessions.map(x=>{let s=db.students.find(a=>a.id===x.student),t=db.teachers.find(a=>a.id===x.teacher);return `<tr><td>${x.date}</td><td>${esc(s?.name||'-')}</td><td>${esc(t?.name||'-')}</td><td>${x.time||'-'}</td><td><span class="status ${x.status==='حضر'?'active':x.status==='غاب'?'danger':'pending'}">${esc(x.status)}</span></td><td>${x.teams?`<a href="${esc(x.teams)}" target="_blank" style="color:#168b7c">فتح</a>`:'-'}</td></tr>`}).join('')}</tbody></table></div>`:'<div class="empty">لا توجد حصص.</div>'}
+function renderPayments(){$('adminPaymentsTable').innerHTML=db.payments.length?`<div class="table-wrap"><table><thead><tr><th>التاريخ</th><th>الطالب</th><th>الباقة</th><th>المبلغ</th><th>الحالة</th></tr></thead><tbody>${db.payments.map(p=>{let s=db.students.find(x=>x.id===p.student);return `<tr><td>${p.date}</td><td>${esc(s?.name||'-')}</td><td>${esc(p.plan)}</td><td>${p.amount.toLocaleString('ar-SA')} ر.س</td><td><span class="status ${p.status==='مدفوع'?'active':p.status==='مستحق'?'danger':'pending'}">${esc(p.status)}</span></td></tr>`}).join('')}</tbody></table></div>`:'<div class="empty">لا توجد دفعات.</div>'}
+function renderTeachers(){$('teacherList').innerHTML=db.teachers.map(t=>`<div class="session"><div><strong>${esc(t.name)}</strong><small>${esc(t.spec)}</small></div><span class="badge ok">متاح</span></div>`).join('')}
+function addTeacher(){let n=$('teacherName').value.trim();if(!n)return;db.teachers.push({id:uid('t'),name:n,spec:$('teacherSpec').value||'English'});$('teacherName').value='';$('teacherSpec').value='';save();toast('تمت إضافة المعلم')}
+function renderDashboard(){let active=db.students.filter(s=>s.status==='نشط').length;$('aStudents').textContent=active;$('aSessions').textContent=db.sessions.length;$('aHours').textContent=(db.sessions.length*.75).toFixed(1);$('aDue').textContent=db.payments.filter(p=>p.status!=='مدفوع').reduce((a,p)=>a+p.amount,0).toLocaleString('ar-SA');$('aPending').textContent=db.students.filter(s=>s.level==='لم يحدد بعد').length;$('aFollow').textContent=db.students.filter(s=>s.status==='قيد التقييم').length;$('recentAdmin').innerHTML=db.students.length?`<div class="table-wrap"><table><thead><tr><th>الطالب</th><th>الصف</th><th>الحالة</th></tr></thead><tbody>${db.students.slice(0,6).map(s=>`<tr><td>${esc(s.name)}</td><td>${esc(s.grade)}</td><td><span class="status ${s.status==='نشط'?'active':'pending'}">${esc(s.status)}</span></td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">ابدأ بتسجيل أول طالب.</div>'}
+function renderReports(){$('rPlans').textContent=db.students.filter(s=>s.level!=='لم يحدد بعد').length;$('rAttend').textContent=db.sessions.filter(s=>s.status==='حضر').length;$('rAbsent').textContent=db.sessions.filter(s=>s.status==='غاب').length}
+function renderCalendar(){let y=month.getFullYear(),m=month.getMonth();$('monthTitle').textContent=new Intl.DateTimeFormat('ar-SA',{month:'long',year:'numeric'}).format(month);let first=new Date(y,m,1).getDay(),days=new Date(y,m+1,0).getDate(),html='';for(let i=0;i<first;i++)html+='<div class="day" style="opacity:.3"></div>';for(let d=1;d<=days;d++){let ds=`${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;let ev=db.sessions.filter(s=>s.date===ds);let today=new Date();let it=d===today.getDate()&&m===today.getMonth()&&y===today.getFullYear();html+=`<div class="day ${it?'today':''}"><small>${d}</small>${ev.map(x=>`<span class="event">${x.time||''} ${esc(db.students.find(s=>s.id===x.student)?.name||'حصة')}</span>`).join('')}</div>`}while((first+days)%7) {html+='<div class="day" style="opacity:.3"></div>';days++}$('adminCalendar').innerHTML=html}
+function moveMonth(n){month.setMonth(month.getMonth()+n);renderCalendar()}
+function saveBooking(){db.settings.bookingUrl=$('bookingUrl').value.trim();db.settings.bookingEmbed=$('bookingEmbed').value.trim();save();toast('تم حفظ إعدادات Bookings')}
+function saveSettings(){db.settings.duration=$('duration').value;db.settings.channel=$('channel').value;save();toast('تم حفظ الإعدادات')}
+function resetData(){if(confirm('مسح جميع بيانات التجربة؟')){localStorage.removeItem(KEY);location.reload()}}
+function exportCSV(type){let rows=type==='students'?db.students.map(s=>({الطالب:s.name,ولي_الأمر:s.parent,الجوال:s.phone,الصف:s.grade,المستوى:s.level,الهدف:s.goal,الحالة:s.status})):db.sessions.map(s=>({التاريخ:s.date,الوقت:s.time,الطالب:db.students.find(x=>x.id===s.student)?.name||'',المعلم:db.teachers.find(x=>x.id===s.teacher)?.name||'',الحالة:s.status}));if(!rows.length){toast('لا توجد بيانات');return}let keys=Object.keys(rows[0]);let csv='\ufeff'+[keys.join(','),...rows.map(r=>keys.map(k=>`"${String(r[k]??'').replace(/"/g,'""')}"`).join(','))].join('\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='khota-'+type+'.csv';a.click()}
+function backup(){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(db,null,2)],{type:'application/json'}));a.download='khota-pilot-backup.json';a.click()}
+function renderAll(){renderDashboard();renderAdminStudents();renderAdminSessions();renderPayments();renderTeachers();renderReports();$('bookingUrl').value=db.settings.bookingUrl||'';$('bookingEmbed').value=db.settings.bookingEmbed||'';$('duration').value=db.settings.duration;$('channel').value=db.settings.channel;renderCalendar()}
+renderAll();
+</script>
+</body>
+</html>
